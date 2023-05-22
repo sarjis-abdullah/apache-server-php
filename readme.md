@@ -1,7 +1,6 @@
 ## CMDs
 
-- docker build -t apache-server-php .
-- docker run -d -p 8081:80 apache-server-php
+- docker-compose up -d
 
 ## To stop and remove the Docker container running your PHP project, you can use the following commands:
 

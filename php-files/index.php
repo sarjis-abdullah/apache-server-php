@@ -1,5 +1,4 @@
-<?php 
-
+<?php
 
 ?>
 
@@ -13,6 +12,5 @@
 </head>
 <body>
 
-  
 </body>
 </html>
