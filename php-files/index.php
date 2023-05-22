@@ -1,10 +1,4 @@
 <?php
-$todos = [];
-if (file_exists('todo.json')) {
-    $jsonTodos = file_get_contents('todo.json');
-    $todos = json_decode($jsonTodos, true);
-}
-
 
 ?>
 
@@ -17,25 +11,6 @@ if (file_exists('todo.json')) {
   <title>Hello PHP</title>
 </head>
 <body>
-<form action="/create.php" method="POST">
-  <label for="fname">First todo:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <input type="submit" value="Submit">
-</form>
-<ul>
-    <ul>
-        <?php
-        foreach ($todos as $todo):
-            ?>
-            <li>
-                <?php echo $todo['name']; ?>
-            </li>
-        <?php
-        endforeach;
-        ?>
-    </ul>
-</ul>
 
-  
 </body>
 </html>
