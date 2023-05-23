@@ -16,7 +16,7 @@ if (file_exists('todo.json')) {
 if (isset($_POST['fname']) && $_POST['fname'] != '') {
   $todos = [...$todos, [
     'id' => uniqid(),
-    'completed' => true,
+    'completed' => false,
     'name' => $_POST['fname']
   ]];
 
